@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* essa primeira linha importa a fonte "Barlow Condensed" do Google Fonts */
+
+/* muda a fonte da pagina inteira para "Barlow Condensed" */
+* {
+    font-family: 'Barlow Condensed';
+}
+
+/* muda o background da pagina para um cinza claro */
+body {
+    background-color: #fffcec;
+}
+
+/* estiliza o do cabeçalho, que é a parte superior da pagina, onde fica o titulo do site */
+header {
+    margin: 0px;
+    text-align: center;
+    background-color: #FFD700;
+    padding: 10px;
+    font-size: x-large;
+}
+
+/* estiliza a parte principal da pagina, onde o usuário vai digitar o nome da cidade e consultar as informações dela, como mudar a cor, sombra, arredondamento e um jeito de centralizar meio porco */
+main {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 50px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px #000000;
+    width: 1200px;
+    position: relative; left: 290px;
+}
+
+/* muda o titulo da parte principal da pagina */
+main h1 {
+    color:  #000000;
+    padding: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-bottom: 2px solid #D3AF37;
+}
+
+/* muda o subtitulo da parte principal da pagina */
+h2 {
+    color: #030303;
+}
+
+
+
+/* estiliza o input deixando ele maior e com mais espaço */
+input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: x-large;
+    border-radius: 100px;
+    border: 0px solid #000000;
+    
+}
+
+/* estiliza o botão deixando ele maior, arredondado e sem borda */ 
+button {
+    color: #D3AF37;
+    background-color: #fffcec;
+    padding: 10px;
+    border-radius: 100px;
+    border: 0px solid #006494;
+    font-size: x-large;
+}
+
+/* muda a cor do botão quando o mouse passa por cima dele */
+button:hover {
+    background-color: #D3AF37;
+    color: #000;
+}
+
+/* faz um div em volta do formulario para estilização */
+div {
+    border-top: 5px solid #D3AF37;
+    background-color: #FFD700;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px;
+    max-width: 1000px;
+    width: 400px;
+    position: relative; left: 330px;
+}
