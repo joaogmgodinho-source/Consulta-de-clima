@@ -1,5 +1,5 @@
 const CACHE_NAME = 'climatte-v1';
-const assets = [
+const ARQUIVOS_PARA_CACHE = [
   './',
   './index.html',
   './style.css',
@@ -9,18 +9,18 @@ const assets = [
   './icons/icon-512x512.png'
 ];
 
-self.addEventListener('install', (event) => {
-  event.waitUntil(
+self.addEventListener('install', (evento) => {
+  evento.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(assets);
+      return cache.addAll(ARQUIVOS_PARA_CACHE);
     })
   );
 });
 
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
+self.addEventListener('fetch', (evento) => {
+  evento.respondWith(
+    caches.match(evento.request).then((respostaCache) => {
+      return respostaCache || fetch(evento.request);
     })
   );
 });
