@@ -9,6 +9,7 @@
 /* muda o background da pagina para um cinza claro */
 body {
     background-color: #fffcec;
+    margin: 0px;
 }
 
 /* estiliza o do cabeçalho, que é a parte superior da pagina, onde fica o titulo do site */
@@ -25,11 +26,12 @@ main {
     text-align: center;
     background-color: #ffffff;
     padding: 50px;
-    margin-top: 100px;
+    margin: 50px auto;
     border-radius: 10px;
     box-shadow: 2px 1px 10px #000000;
-    width: 1200px;
-    position: relative; left: 290px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box; /* Evita que o padding estoure a largura total */
 }
 
 /* muda o titulo da parte principal da pagina */
@@ -81,7 +83,7 @@ div {
     padding: 30px;
     border-radius: 15px;
     margin: 40px;
-    max-width: 1000px;
-    width: 400px;
-    position: relative; left: 330px;
+    max-width: 400px;
+    width: 100%;
+    margin: 40px auto;
 }
