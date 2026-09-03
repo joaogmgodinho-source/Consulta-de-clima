@@ -50,6 +50,7 @@ h2 {
 input {
     border-radius: 100px;
     border: 0px solid #000000;
+    position: relative; right: 7px;
 }
 
 /* estiliza o botão deixando ele maior, arredondado e sem borda */ 
@@ -65,6 +66,7 @@ button {
 button:hover {
     background-color: #D3AF37;
     color: #000;
+    cursor: pointer;
 }
 
 /* faz um div em volta do formulario para estilização */
