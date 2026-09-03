@@ -46,13 +46,11 @@ h2 {
     color: #000000;
 }
 
-
-
 /* estiliza o input deixando ele maior e com mais espaço */
 input {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: x-large;
+    font-size: 17px;
     border-radius: 100px;
     border: 0px solid #000000;
     
@@ -65,7 +63,7 @@ button {
     padding: 10px;
     border-radius: 100px;
     border: 0px solid #006494;
-    font-size: x-large;
+    font-size: 17px;
 }
 
 /* muda a cor do botão quando o mouse passa por cima dele */
@@ -81,7 +79,7 @@ div {
     padding: 30px;
     border-radius: 15px;
     margin: 40px;
-    max-width: 200px;
+    max-width: 150px;
     width: 100%;
     margin: 40px auto;
 }
