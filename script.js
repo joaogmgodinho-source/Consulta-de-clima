@@ -51,12 +51,62 @@ fetch(urlBusca)
   })
 
 
-  
 
-  then(resposta => resposta.json())
+
+  .then(resposta => resposta.json())
   .then(dadosClima => {
     console.log(dadosClima);
+    const temperatura = dadosClima.current.temperature_2m;
+    const umidade = dadosClima.current.relative_humidity_2m;
+    const vento = dadosClima.current.wind_speed_10m;
+
+    console.log("Temperatura:", temperatura);
+    console.log("Umidade:", umidade);
+    console.log("Vento:", vento);
+              resultado.innerHTML = `
+          <div class="card-clima">
+            <h2>${cidade}</h2>
+
+            <p>
+              Temperatura:
+              <strong>${temperatura} °C</strong>
+            </p>
+
+            <p>
+              Umidade:
+              <strong>${umidade}%</strong>
+            </p>
+
+            <p>
+              Vento:
+              <strong>${vento} km/h</strong>
+            </p>
+          </div>
+        `;
   });
+    
+  
+    fetch(url)
+    .then(resposta => {
+
+      // Verifica se o servidor respondeu com sucesso
+      if (!resposta.ok) {
+        throw new Error("Não foi possível consultar a cidade.");
+      }
+
+      // Converte o corpo da resposta para JSON
+      return resposta.json();
+    })
+    .then(dados => {
+
+
+      // Por enquanto, apenas observe o JSON
+      console.log(dados);
+    })
+    .catch(erro => {
+
+      console.error(erro);
+    });
 
 
 
